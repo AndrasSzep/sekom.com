@@ -1,0 +1,44 @@
+<style type="text/css">
+body,td,th {
+	font-size: 16px;
+	color: #006;
+	font-family: "Arial Black";
+}
+body {
+	background-image: url(images/background-main.jpg);
+	background-repeat: no-repeat;
+	margin-left: 50px;
+	margin-top: 20px;
+	margin-right: 50px;
+	margin-bottom: 1px;
+	font-size: 16px;
+	font-family: "Arial";
+	font-weight: bold;
+	background-color: #A6A9C6;
+	color: #FFF;
+	text-align: left;
+	overflow: hidden;
+	background-position: center center;
+}
+a:link {
+	color: #000066;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #000066;
+}
+a:hover {
+	text-decoration: none;
+	color: #000066;
+}
+a:active {
+	text-decoration: none;
+	color: #000099;
+	font-style: normal;
+}
+</style>
+.align {
+	text-align: left;
+}
+html {overflow-y:auto}

@@ -1,0 +1,73 @@
+<style type="text/css">
+body,td,th {
+	font-size: 16px;
+	color: #FFF;
+	font-family: "Arial Black";
+}
+body {
+	background-repeat: no-repeat;
+	margin-left: 50px;
+	margin-top: 20px;
+	margin-right: 50px;
+	margin-bottom: 1px;
+	font-size: 20px;
+	background-color: transparent;
+	color: #006;
+	text-align: left;
+	font-family: Arial;
+}
+a:link {
+	color: #036;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #036;
+}
+a:hover {
+	text-decoration: none;
+	color: #666;
+}
+a:active {
+	text-decoration: none;
+	color: #666;
+}
+</style>
+.align {
+	text-align: left;
+}
+.normal {
+	font-family: Arial;
+}
+.centeral {
+	text-align: center;
+}
+#alcl {
+	text-align: center;
+}
+.alcl {
+}
+.alcl {
+	text-align: center;
+}
+#bb {
+	font-size: 36px;
+	background-color: #FFF;
+}
+.whitebg {
+	background-color: #FFF;
+	background-position: center center;
+	padding: 3px;
+}
+#sm {
+	font-size: 16px;
+}
+.bi {
+	font-size: 36px;
+}
+#sma {
+	font-size: 14px;
+}
+colcol {
+	background-color: #D8E9FD;
+}

@@ -15,16 +15,16 @@ $password = "%%Rx30b85t";
 $dbname = "sekom";
 
 $datum='"' . date(DATE_W3C) . '"';
-echo '<br>-----<br>' . $datum . '<br>';
+echo '<br>' . $datum . '<br>';
 $ip='"' . $_SERVER['REMOTE_ADDR'] . '"';
-echo $ip . '<br>-----<br>';
+echo $ip . '<br';
 $os = '"'.getOS().'"';
-echo 'OS:' . $os . '<br>';
+echo $os . '<br>';
 $browser = '"'.getBrowser().'"';
 echo $browser . '<br>';
 
-//$sql = 'INSERT INTO visitors ( datum, ip, os, browser ) VALUES ( ' . $datum . ' , ' . $ip . ' , ' . $os . ' , ' . $browser  . ' )';
-//echo '<br>----<br>'$sql . '<br>'.'----<br>';
+$sql = 'INSERT INTO visitors ( datum, ip, os, browser ) VALUES ( ' . $datum . ' , ' . $ip . ' , ' . $os . ' , ' . $browser  . ' )';
+echo '<br>----<br>' . $sql . '<br>';
 /*
 // Create connection
 $conn = mysqli_connect($servername, $username, $password, $dbname);

@@ -7,7 +7,7 @@
 </head>
   <body>
     <?php
-    include('getos.php')
+    include('getos.php');
 
 $servername = "localhost";
 $username = "SekomWWW";

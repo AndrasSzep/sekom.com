@@ -47,16 +47,19 @@ $datum='"' . date(DATE_W3C) . '"';
 echo $date;
 $ip='"' . $_SERVER['REMOTE_ADDR'] . '"';
 echo $ip;
-//$sql = 'INSERT INTO visitors ( datum, ip, os, browser) VALUES (' . $dd . ' , ' . $name . ' , ' . $os . ' , ' . $browser . ' )';
-$sql = "INSERT INTO `visitors` (`datum`, `ip`, `os`, `browser`) VALUES (\'10-08-2022\', \'192.168.100.1\', \'OS X\', \'Chrome\');";
+$os = "OS";
+$browser = "Chrome";
+$sql = 'INSERT INTO visitors' . '( datum, ip, os, browser )' .
+' VALUES (' . $datum . ', "'. $ip .'", "'. $os . '", " '. $browser .'" ,' . ' )';
 echo $sql;
 
-
+/*
 if (mysqli_query($conn, $sql)) {
 //  echo "New record created successfully";
 } else {
   echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 }
+*/
 
 mysqli_close($conn);
     ?>

@@ -15,13 +15,13 @@ $password = "%%Rx30b85t";
 $dbname = "sekom";
 
 $datum='"' . date(DATE_W3C) . '"';
-echo '<br>:' . $datum . '<br>';
+//echo '<br>:' . $datum . '<br>';
 $ip='"' . $_SERVER['REMOTE_ADDR'] . '"';
-echo $ip . '<br';
+//echo $ip . '<br';
 $os = '"'.getOS().'"';
-echo $os . '<br>';
+//echo $os . '<br>';
 $browser = '"'.getBrowser().'"';
-echo $browser . '<br>';
+//echo $browser . '<br>';
 
 $sql = 'INSERT INTO visitors ( datum, ip, os, browser ) VALUES ( ' . $datum . ' , ' . $ip . ' , ' . $os . ' , ' . $browser  . ' )';
 echo '<br>----<br>' . $sql . '<br>';

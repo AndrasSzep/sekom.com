@@ -7,7 +7,7 @@
 </head>
   <body>
     <?php
-    include('getos.php') 
+    include('getos.php')
 
 $servername = "localhost";
 $username = "SekomWWW";
@@ -18,8 +18,10 @@ $datum='"' . date(DATE_W3C) . '"';
 echo '<br>-----<br>' . $datum . '<br>';
 $ip='"' . $_SERVER['REMOTE_ADDR'] . '"';
 echo $ip . '<br>-----<br>';
-//$os = '"'.getOS().'"';
-//$browser = '"'.getBrowser().'"';
+$os = '"'.getOS().'"';
+echo 'OS:' . $os . '<br>';
+$browser = '"'.getBrowser().'"';
+echo $browser . '<br>';
 
 //$sql = 'INSERT INTO visitors ( datum, ip, os, browser ) VALUES ( ' . $datum . ' , ' . $ip . ' , ' . $os . ' , ' . $browser  . ' )';
 //echo '<br>----<br>'$sql . '<br>'.'----<br>';

@@ -73,4 +73,6 @@ function getBrowser() {
 	return $browser;
 }
 
-echo getOS() . " - " . getBrowser();
+echo '<br>' . getOS() . " - " . getBrowser() . '<br>';
+
+?>

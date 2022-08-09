@@ -7,8 +7,7 @@
 </head>
   <body>
     <?php
-    $ip=$_SERVER['REMOTE_ADDR'];
-//    echo "Your IP address is: $ip";
+    include('getos.php') 
 
 $servername = "localhost";
 $username = "SekomWWW";

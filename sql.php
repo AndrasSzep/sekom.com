@@ -15,9 +15,17 @@ $username = "SekomWWW";
 $password = "%%Rx30b85t";
 $dbname = "sekom";
 
+$datum='"' . date(DATE_W3C) . '"';
+echo $datum;
+$ip='"' . $_SERVER['REMOTE_ADDR'] . '"';
+echo $ip;
+$os = "OS";
+$browser = "Chrome";
+/*
 // Create connection
 $conn = mysqli_connect($servername, $username, $password, $dbname);
-/* Check if the connection succeeded */
+
+// Check if the connection succeeded
 if (!$conn)
 {
    echo 'Connection failed<br>';
@@ -33,22 +41,7 @@ echo $conn->host_info ;
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
-// Perform query
-/*
-if ($result = mysqli_query($conn , "SELECT * FROM webdataform")) {
-  echo "Returned rows are: " . mysqli_num_rows($result);
-  // Free result set
-  mysqli_free_result($result);
-}
-*/
 
-/*
-$datum='"' . date(DATE_W3C) . '"';
-echo $datum;
-$ip='"' . $_SERVER['REMOTE_ADDR'] . '"';
-echo $ip;
-$os = "OS";
-$browser = "Chrome";
 $sql = 'INSERT INTO visitors' . '( datum, ip, os, browser )' .
 ' VALUES (' . $datum . ', "'. $ip .'", "'. $os . '", " '. $browser .'" ,' . ' )';
 echo $sql;

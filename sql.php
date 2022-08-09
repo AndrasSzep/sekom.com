@@ -25,7 +25,7 @@ $browser = '"'.getBrowser().'"';
 
 $sql = 'INSERT INTO visitors ( datum, ip, os, browser ) VALUES ( ' . $datum . ' , ' . $ip . ' , ' . $os . ' , ' . $browser  . ' )';
 echo '<br>----<br>' . $sql . '<br>';
-/*
+
 // Create connection
 $conn = mysqli_connect($servername, $username, $password, $dbname);
 

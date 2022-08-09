@@ -8,7 +8,7 @@
   <body>
     <?php
     $ip=$_SERVER['REMOTE_ADDR'];
-//    echo "Your IP address is: $ip";
+    echo "Your IP address is: $ip";
 
 $servername = "localhost";
 $username = "SekomWWW";
@@ -16,12 +16,14 @@ $password = "%%Rx30b85t";
 $dbname = "sekom";
 
 $datum='"' . date(DATE_W3C) . '"';
+echo $datum . '<br>';
 $ip='"' . $_SERVER['REMOTE_ADDR'] . '"';
+echo $ip . '<br>';
 //$os = '"'.getOS().'"';
 //$browser = '"'.getBrowser().'"';
 
-$sql = 'INSERT INTO visitors ( datum, ip, os, browser ) VALUES ( ' . $datum . ' , ' . $ip . ' , ' . $os . ' , ' . $browser  . ' )';
-echo '<br>----<br>'$sql . '<br>'.'----<br>';
+//$sql = 'INSERT INTO visitors ( datum, ip, os, browser ) VALUES ( ' . $datum . ' , ' . $ip . ' , ' . $os . ' , ' . $browser  . ' )';
+//echo '<br>----<br>'$sql . '<br>'.'----<br>';
 /*
 // Create connection
 $conn = mysqli_connect($servername, $username, $password, $dbname);
@@ -53,7 +55,7 @@ if (mysqli_query($conn, $sql)) {
 }
 */
 
-mysqli_close($conn);
+//mysqli_close($conn);
     ?>
   </body>
 </html>

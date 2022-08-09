@@ -16,11 +16,13 @@ $password = "%%Rx30b85t";
 $dbname = "sekom";
 
 $datum='"' . date(DATE_W3C) . '"';
-echo $datum;
 $ip='"' . $_SERVER['REMOTE_ADDR'] . '"';
-echo $ip;
 $os = "OS";
 $browser = "Chrome";
+
+$sql = 'INSERT INTO visitors' . '( datum, ip, os, browser )' .
+' VALUES (' . $datum . ', "'. $ip .'", "'. $os . '", " '. $browser .'" ,' . ' )';
+echo $sql;
 /*
 // Create connection
 $conn = mysqli_connect($servername, $username, $password, $dbname);
@@ -42,9 +44,7 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = 'INSERT INTO visitors' . '( datum, ip, os, browser )' .
-' VALUES (' . $datum . ', "'. $ip .'", "'. $os . '", " '. $browser .'" ,' . ' )';
-echo $sql;
+
 
 /*
 if (mysqli_query($conn, $sql)) {

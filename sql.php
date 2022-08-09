@@ -17,11 +17,11 @@ $dbname = "sekom";
 
 $datum='"' . date(DATE_W3C) . '"';
 $ip='"' . $_SERVER['REMOTE_ADDR'] . '"';
-$os = "OS";
-$browser = "Chrome";
+$os = '"'."OS".'"';
+$browser = '"'."Chrome".'"';
 
-$sql = 'INSERT INTO visitors' . '( datum, ip, os, browser )' .
-' VALUES (' . $datum . ', "'. $ip .'", "'. $os . '", " '. $browser .'" ,' . ' )';
+$sql = 'INSERT INTO visitors ( datum, ip, os, browser ) VALUES ( '
+   . $datum . ' , ' . $ip . ' , ' . $os . ' , ' . $browser  . ' )';
 echo $sql;
 /*
 // Create connection

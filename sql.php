@@ -42,9 +42,9 @@ if ($result = mysqli_query($conn , "SELECT * FROM webdataform")) {
 }
 */
 
-
+/*
 $datum='"' . date(DATE_W3C) . '"';
-echo $date;
+echo $datum;
 $ip='"' . $_SERVER['REMOTE_ADDR'] . '"';
 echo $ip;
 $os = "OS";

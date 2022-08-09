@@ -16,7 +16,7 @@ $password = "%%Rx30b85t";
 $dbname = "sekom";
 
 $datum='"' . date(DATE_W3C) . '"';
-echo '<br>-----<br>'$datum . '<br>';
+echo '<br>-----<br>' . $datum . '<br>';
 $ip='"' . $_SERVER['REMOTE_ADDR'] . '"';
 echo $ip . '<br>-----<br>';
 //$os = '"'.getOS().'"';

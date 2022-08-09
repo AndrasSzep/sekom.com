@@ -14,7 +14,7 @@ $servername = "localhost";
 $username = "SekomWWW";
 $password = "%%Rx30b85t";
 $dbname = "sekom";
-<?php include('getos.php') ?>
+include('getos.php');
 $datum='"' . date(DATE_W3C) . '"';
 $ip='"' . $_SERVER['REMOTE_ADDR'] . '"';
 $os = '"'.getOS().'"';

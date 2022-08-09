@@ -6,7 +6,6 @@
 </style>
 </head>
   <body>
-    <?php include('getos.php') ?>
     <?php
     $ip=$_SERVER['REMOTE_ADDR'];
 //    echo "Your IP address is: $ip";
@@ -18,8 +17,8 @@ $dbname = "sekom";
 
 $datum='"' . date(DATE_W3C) . '"';
 $ip='"' . $_SERVER['REMOTE_ADDR'] . '"';
-$os = '"'.getOS().'"';
-$browser = '"'.getBrowser().'"';
+//$os = '"'.getOS().'"';
+//$browser = '"'.getBrowser().'"';
 
 $sql = 'INSERT INTO visitors ( datum, ip, os, browser ) VALUES ( '
    . $datum . ' , ' . $ip . ' , ' . $os . ' , ' . $browser  . ' )';

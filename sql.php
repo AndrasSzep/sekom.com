@@ -8,7 +8,7 @@
   <body>
     <?php
     $ip=$_SERVER['REMOTE_ADDR'];
-    echo "Your IP address is: $ip";
+//    echo "Your IP address is: $ip";
 
 $servername = "localhost";
 $username = "SekomWWW";
@@ -16,9 +16,9 @@ $password = "%%Rx30b85t";
 $dbname = "sekom";
 
 $datum='"' . date(DATE_W3C) . '"';
-echo $datum . '<br>';
+echo '<br>-----<br>'$datum . '<br>';
 $ip='"' . $_SERVER['REMOTE_ADDR'] . '"';
-echo $ip . '<br>';
+echo $ip . '<br>-----<br>';
 //$os = '"'.getOS().'"';
 //$browser = '"'.getBrowser().'"';
 

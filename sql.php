@@ -14,15 +14,15 @@ $servername = "localhost";
 $username = "SekomWWW";
 $password = "%%Rx30b85t";
 $dbname = "sekom";
-
+<?php include('getos.php') ?>
 $datum='"' . date(DATE_W3C) . '"';
 $ip='"' . $_SERVER['REMOTE_ADDR'] . '"';
-$os = '"'."OS".'"';
-$browser = '"'."Chrome".'"';
+$os = '"'.getOS().'"';
+$browser = '"'.getBrowser().'"';
 
 $sql = 'INSERT INTO visitors ( datum, ip, os, browser ) VALUES ( '
    . $datum . ' , ' . $ip . ' , ' . $os . ' , ' . $browser  . ' )';
-echo $sql . '<br>';
+echo '<br>----<br>'$sql . '<br>'.'----<br>';
 
 // Create connection
 $conn = mysqli_connect($servername, $username, $password, $dbname);

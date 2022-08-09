@@ -11,9 +11,9 @@
 //    echo "Your IP address is: $ip";
 
 $servername = "localhost";
-$username = "erdos";
-$password = "%Cdu438m2";
-$dbname = "erdos";
+$username = "SekomWWW";
+$password = "%%Rx30b85t";
+$dbname = "sekom";
 
 // Create connection
 $conn = mysqli_connect($servername, $username, $password, $dbname);
@@ -26,9 +26,9 @@ if (!$conn)
    die();
 }
 
-//echo 'Successfully connected!<br>';
+echo 'Successfully connected!<br>';
 
-//echo $conn->host_info ;
+echo $conn->host_info ;
 // Check connection
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
@@ -43,13 +43,13 @@ if ($result = mysqli_query($conn , "SELECT * FROM webdataform")) {
 */
 
 
-$dd='"' . date(DATE_W3C) . '"';
+$datum='"' . date(DATE_W3C) . '"';
 //echo $date;
 $ip='"' . $_SERVER['REMOTE_ADDR'] . '"';
-$sql = 'INSERT INTO webdataform ' . '( dd, name, email, comment, ip)' .
-' VALUES (' . $dd . ', "'. $name .'", "'. $email . '", " '. $comment .'" ,' . $ip . ' )';
+//echo $ip;
+$sql = 'INSERT INTO visitors ( datum, ip, os, browser) VALUES (' . $dd . ' , ' . $name . ' , ' . $os . ' , ' . $browser . ' )';
 
-//echo $sql;
+echo $sql;
 
 
 if (mysqli_query($conn, $sql)) {

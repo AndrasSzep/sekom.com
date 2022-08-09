@@ -6,6 +6,7 @@
 </style>
 </head>
   <body>
+    <?php include('getos.php') ?>
     <?php
     $ip=$_SERVER['REMOTE_ADDR'];
 //    echo "Your IP address is: $ip";
@@ -14,7 +15,7 @@ $servername = "localhost";
 $username = "SekomWWW";
 $password = "%%Rx30b85t";
 $dbname = "sekom";
-include('getos.php');
+
 $datum='"' . date(DATE_W3C) . '"';
 $ip='"' . $_SERVER['REMOTE_ADDR'] . '"';
 $os = '"'.getOS().'"';
